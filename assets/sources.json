@@ -1,0 +1,22 @@
+{
+  "video": { "file": "../burabayvideo.mp4", "source": "User-supplied Full HD film", "durationSeconds": 138.84 },
+  "poster": { "file": "hero-poster.jpg", "source": "Still extracted from the user-supplied film at 15 seconds" },
+  "photography": [
+    { "usage": "Editorial introduction", "author": "Alena Taur", "profile": "https://unsplash.com/@taur", "image": "https://images.unsplash.com/photo-1761829723339-ebaa6cd07542?auto=format&fit=crop&q=85&w=2400", "description": "Mountain range seen through pine trees, Burabay" },
+    { "usage": "Okzhetpes regional landscape study", "author": "Alena Taur", "profile": "https://unsplash.com/@taur", "image": "https://images.unsplash.com/photo-1761829717820-98dff45b8d9f?auto=format&fit=crop&q=85&w=2400", "description": "Jagged mountains above a forest and lake, Burabay" },
+    { "usage": "Zhumbaktas regional landscape study", "author": "Igor Ladigin", "profile": "https://unsplash.com/@igorladigin", "image": "https://images.unsplash.com/photo-1717324236722-a0c90bbce348?auto=format&fit=crop&q=85&w=2400", "description": "A lake surrounded by rocks and trees, Burabay" },
+    { "usage": "Bolektau regional landscape study", "author": "Darya Popova", "page": "https://unsplash.com/photos/MZWV9fEnAGk", "image": "https://images.unsplash.com/photo-1722408661586-c13ab22698b6?auto=format&fit=crop&q=85&w=2400", "description": "A lake surrounded by trees and mountains, Burabay" },
+    { "usage": "Outro", "author": "Viktor Hesse", "page": "https://unsplash.com/photos/c63zz1-4Y0g", "image": "https://images.unsplash.com/photo-1666976621086-cd1b48cfb305?auto=format&fit=crop&q=85&w=2400", "description": "A road through the forest around the lake, Burabay" }
+  ],
+  "photographyLicense": "https://unsplash.com/license",
+  "destinationSources": [
+    "https://kazakhstan.travel/ru/parks/burabay",
+    "https://kazakhstan.travel/en/attractions/6",
+    "https://kazakhstan.travel/en/attractions/5",
+    "https://qazaqculture.com/en/cultural-objects/54b7db67-434e-4f87-a6ee-814308b3e18d",
+    "https://qaztravel.kz/en/tourist-spots/okjetpes-and-jumbaktas-rocks"
+  ],
+  "fonts": ["Italiana", "Cormorant Garamond", "Syne", "Space Mono"],
+  "libraries": { "gsap": "3.13.0", "ScrollTrigger": "3.13.0", "SplitType": "0.3.4", "Lenis": "1.3.8", "Lucide": "0.468.0" },
+  "audio": "Synthesized wind/water ambience generated through Web Audio on explicit user interaction"
+}

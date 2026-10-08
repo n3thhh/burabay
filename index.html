@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#152d27">
+  <meta name="description" content="Discover Burabay, the pearl of Kazakhstan. A journey through legendary granite peaks, still lakes and pine forests. Shape your own expedition.">
+  <meta property="og:title" content="Burabay — A different kind of wild">
+  <meta property="og:description" content="Where the steppe meets the soul. Explore the legends and landscapes of Burabay National Park, Kazakhstan.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1761829723339-ebaa6cd07542?auto=format&amp;fit=crop&amp;q=85&amp;w=2400">
+  <title>Burabay — A different kind of wild</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Italiana&amp;family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#discover">Skip to the landscape</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label">Explore</span></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Burabay home" data-magnetic>
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3 45 39H3L24 3Z" stroke="currentColor" stroke-width="1.2"/><path d="m10 39 14-24 14 24M24 3v42M3 39l21-12 21 12" stroke="currentColor" stroke-width=".8"/><circle cx="24" cy="27" r="5" stroke="currentColor" stroke-width=".8"/></svg>
+      <span>BURABAY<small>KAZAKHSTAN · NATIONAL PARK</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#discover" data-magnetic>Discover</a>
+      <a href="#legends" data-magnetic>The legends</a>
+      <a href="#field-notes" data-magnetic>Field notes</a>
+    </nav>
+    <button class="header-cta" type="button" data-plan data-magnetic>Plan a journey <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+    <button class="menu-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" data-lenis-prevent hidden>
+    <a href="#discover">Discover <span>01</span></a><a href="#legends">The legends <span>02</span></a><a href="#field-notes">Field notes <span>03</span></a>
+    <button type="button" data-plan>Plan a journey <i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+    <p class="mono">53.0850° N / 70.3025° E</p>
+  </nav>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true"><source src="burabayvideo.mp4" type="video/mp4"></video>
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-topline mono"><span><span class="status-dot"></span> AKMOLA REGION, KAZAKHSTAN</span><span>53.0850° N &nbsp; 70.3025° E</span></div>
+      <div class="hero-content">
+        <p class="hero-kicker mono">BEYOND THE EXPECTED</p>
+        <h1 id="hero-title" class="hero-title" aria-label="Burabay">BURABAY</h1>
+        <div class="hero-subline"><span class="fine-line"></span><p>A different kind of <em>wild.</em></p><span class="fine-line"></span></div>
+      </div>
+      <div class="hero-bottom">
+        <a class="scroll-cue" href="#discover" data-magnetic><span class="circle-arrow"><i data-lucide="arrow-down" aria-hidden="true"></i></span><span class="mono">SCROLL TO<br>FEEL THE PLACE</span></a>
+        <p class="hero-description">Ancient stone. Endless pine.<br>A world that moves at its own pace.</p>
+        <div class="hero-index"><span class="mono">THE PEARL OF KAZAKHSTAN</span><span class="hero-index-number">01 <span>/ 04</span></span></div>
+      </div>
+      <button class="motion-toggle icon-button" type="button" aria-label="Pause background film" aria-pressed="false"><i data-lucide="pause" aria-hidden="true"></i></button>
+    </section>
+
+    <section class="introduction section-light" id="discover" aria-labelledby="intro-title">
+      <div class="section-meta mono"><span>01 / A PLACE APART</span><span>WELCOME TO BURABAY</span></div>
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <h2 id="intro-title" class="editorial-title text-reveal">Some places<br>are found.<br>Others, <em>felt.</em></h2>
+          <div class="intro-paragraph reveal"><span class="tiny-cross" aria-hidden="true">✳</span><p>Beyond Kazakhstan’s open steppe, another world unfolds. Pine forests lean into still water. Granite peaks carry old stories. And for a moment, the rest of the world falls quiet.</p></div>
+          <a class="text-link" href="#legends">Meet the landscape <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+        </div>
+        <figure class="intro-image reveal">
+          <div class="image-frame"><img src="https://images.unsplash.com/photo-1761829723339-ebaa6cd07542?auto=format&amp;fit=crop&amp;q=85&amp;w=2400" srcset="https://images.unsplash.com/photo-1761829723339-ebaa6cd07542?auto=format&amp;fit=crop&amp;q=85&amp;w=800 800w, https://images.unsplash.com/photo-1761829723339-ebaa6cd07542?auto=format&amp;fit=crop&amp;q=85&amp;w=2400 2400w" sizes="(max-width: 760px) 90vw, 40vw" alt="Granite mountain ranges seen through the pine trees of Burabay, Kazakhstan" loading="lazy" width="1600" height="2000"></div>
+          <div class="image-seal" aria-hidden="true"><span>WILD BY NATURE</span><svg viewBox="0 0 80 60" fill="none"><path d="m5 48 24-34 13 18 9-12 24 28H5Z" stroke="currentColor" stroke-width="1"/><path d="m22 25 7 6 8-5m9 0 5 7 7-4M5 54h70" stroke="currentColor" stroke-width="1"/></svg><span>53° N / 70° E</span></div>
+          <figcaption class="mono"><span>KOKSHETAU HILLS, BURABAY</span><span>FIG. 001</span></figcaption>
+        </figure>
+      </div>
+      <div class="park-facts reveal"><div><strong>14</strong><span class="mono">LAKES, ONE WORLD</span></div><div><strong>947<span>m</span></strong><span class="mono">KOKSHETAU SUMMIT</span></div><div><strong>260<span>km</span></strong><span class="mono">NORTH OF ASTANA · APPROX.</span></div><p>Far from ordinary.<br><em>Closer than you think.</em></p></div>
+    </section>
+
+    <section class="legends section-dark" id="legends" aria-labelledby="legends-title">
+      <div class="legend-stage">
+        <div class="section-meta mono"><span>02 / STORIES IN THE LANDSCAPE</span><span class="deck-count">01 — 03</span></div>
+        <div class="legend-heading"><h2 id="legends-title" class="editorial-title">Written <br>in <em>stone.</em></h2><div><p>Every silhouette has a story.<br>Every journey, a different perspective.</p><span class="mono desktop-hint">SCROLL TO TRAVERSE <i data-lucide="move-right" aria-hidden="true"></i></span></div></div>
+        <div class="landmark-viewport">
+          <div class="landmark-track">
+            <article class="landmark-card" id="okzhetpes">
+              <button class="landmark-image" type="button" data-landmark="okzhetpes" data-cursor="Read story" aria-label="Read the story of Okzhetpes Rock"><img src="https://images.unsplash.com/photo-1761829717820-98dff45b8d9f?auto=format&amp;fit=crop&amp;q=85&amp;w=2400" alt="Jagged granite ridges rising over forest and lake in Burabay" loading="lazy" width="1800" height="1200"><span class="landmark-numeral">01</span><span class="image-caption mono">GRANITE / LEGEND / SKY</span><span class="image-open"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button>
+              <div class="landmark-caption"><div><p class="mono">THE ARROW CANNOT REACH</p><h3>Okzhetpes</h3></div><button class="story-link" type="button" data-landmark="okzhetpes" aria-label="Explore Okzhetpes legend"><i data-lucide="plus" aria-hidden="true"></i></button></div>
+              <p class="landmark-summary">A granite sentinel. A summit beyond the reach of an arrow. A legend held between earth and sky.</p>
+            </article>
+            <article class="landmark-card" id="zhumbaktas">
+              <button class="landmark-image" type="button" data-landmark="zhumbaktas" data-cursor="Read story" aria-label="Read the story of Zhumbaktas"><img src="https://images.unsplash.com/photo-1717324236722-a0c90bbce348?auto=format&amp;fit=crop&amp;q=85&amp;w=2400" alt="Granite rocks and pine trees beside a lake in Burabay, Kazakhstan" loading="lazy" width="1800" height="1200"><span class="landmark-numeral">02</span><span class="image-caption mono">WATER / MYSTERY / REFLECTION</span><span class="image-open"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button>
+              <div class="landmark-caption"><div><p class="mono">THE SPHINX OF THE LAKE</p><h3>Zhumbaktas</h3></div><button class="story-link" type="button" data-landmark="zhumbaktas" aria-label="Explore Zhumbaktas legend"><i data-lucide="plus" aria-hidden="true"></i></button></div>
+              <p class="landmark-summary">The mystery rock changes its face as you move. A quiet invitation to look a little longer.</p>
+            </article>
+            <article class="landmark-card" id="bolektau">
+              <button class="landmark-image" type="button" data-landmark="bolektau" data-cursor="Read story" aria-label="Discover Bolektau and Lake Borovoe"><img src="https://images.unsplash.com/photo-1722408661586-c13ab22698b6?auto=format&amp;fit=crop&amp;q=85&amp;w=2400" alt="A broad view of a lake framed by pine forests and mountains in Burabay" loading="lazy" width="1800" height="1200"><span class="landmark-numeral">03</span><span class="image-caption mono">HEIGHT / HORIZON / STILLNESS</span><span class="image-open"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></button>
+              <div class="landmark-caption"><div><p class="mono">A NEW POINT OF VIEW</p><h3>Bolektau</h3></div><button class="story-link" type="button" data-landmark="bolektau" aria-label="Discover Bolektau viewpoint"><i data-lucide="plus" aria-hidden="true"></i></button></div>
+              <p class="landmark-summary">Climb above the canopy. Let the lakes, the forest and the whole story come into view.</p>
+            </article>
+          </div>
+        </div>
+        <div class="deck-bottom"><div class="deck-navigation" aria-label="Landscape chapters"><button type="button" class="active" data-chapter="0" aria-label="Go to Okzhetpes" aria-current="true">01<span>OKZHETPES</span></button><button type="button" data-chapter="1" aria-label="Go to Zhumbaktas">02<span>ZHUMBAKTAS</span></button><button type="button" data-chapter="2" aria-label="Go to Bolektau">03<span>BOLEKTAU</span></button></div><div class="deck-progress" aria-hidden="true"><span></span></div><a href="#field-notes" class="mono deck-skip">FIELD NOTES <i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+
+    <section class="field-notes section-light" id="field-notes" aria-labelledby="field-title">
+      <div class="section-meta mono"><span>03 / THE ART OF SLOW EXPLORATION</span><span>YOUR PERSONAL FIELD NOTES</span></div>
+      <div class="field-heading"><h2 id="field-title" class="editorial-title text-reveal">Find your<br>own <em>rhythm.</em></h2><p>Out here, luxury is a little more space.<br>A little less hurry. And time to follow<br>whatever calls you.</p></div>
+      <div class="season-panel reveal">
+        <div class="season-label mono"><i data-lucide="sun" aria-hidden="true"></i> CHOOSE YOUR SEASON</div>
+        <div class="season-tabs" role="tablist" aria-label="Travel season"><button role="tab" id="tab-spring" aria-selected="false" aria-controls="season-detail" tabindex="-1" data-season="spring">Spring</button><button role="tab" id="tab-summer" aria-selected="true" aria-controls="season-detail" data-season="summer">Summer</button><button role="tab" id="tab-autumn" aria-selected="false" aria-controls="season-detail" tabindex="-1" data-season="autumn">Autumn</button><button role="tab" id="tab-winter" aria-selected="false" aria-controls="season-detail" tabindex="-1" data-season="winter">Winter</button></div>
+        <div class="season-detail" id="season-detail" role="tabpanel" aria-labelledby="tab-summer" tabindex="0"><span class="mono" id="season-months">JUN — AUG</span><p id="season-copy">Long light, open water, and pine-scented evenings.</p><span class="season-signal"><span class="status-dot"></span><span id="season-focus">LAKESIDE DAYS</span></span></div>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card" data-tilt><div class="experience-top"><span class="mono">01 / RESTORE</span><i data-lucide="trees" aria-hidden="true"></i></div><h3>Into<br>the pines.</h3><p>Forest walks, lake air and a slower kind of wellness.</p><button class="experience-toggle text-link" aria-expanded="false" aria-controls="wellness-details" type="button">The quiet route <i data-lucide="plus" aria-hidden="true"></i></button><div class="experience-detail" id="wellness-details" hidden>Leave an unhurried morning for a forest walk. Look for a lakeside retreat with a sauna or spa, then return to the water before sunset.</div></article>
+        <article class="experience-card" data-tilt><div class="experience-top"><span class="mono">02 / ROAM</span><i data-lucide="route" aria-hidden="true"></i></div><h3>Follow<br>the trail.</h3><p>A saddle, a forest path, and room to wander.</p><button class="experience-toggle text-link" aria-expanded="false" aria-controls="equestrian-details" type="button">The equestrian guide <i data-lucide="plus" aria-hidden="true"></i></button><div class="experience-detail" id="equestrian-details" hidden>Arrange a guided ride with a local operator. Share your riding experience beforehand and ask for a forest route suited to your confidence.</div></article>
+        <article class="experience-card" data-tilt><div class="experience-top"><span class="mono">03 / STAY</span><i data-lucide="tent" aria-hidden="true"></i></div><h3>Sleep<br>under stars.</h3><p>Canvas, comfort, and a front row seat to nature.</p><button class="experience-toggle text-link" aria-expanded="false" aria-controls="glamping-details" type="button">The glamping guide <i data-lucide="plus" aria-hidden="true"></i></button><div class="experience-detail" id="glamping-details" hidden>Choose a managed glamping site or forest lodge. Confirm heating, bathroom facilities and transfers before reserving; shoulder-season nights turn cool.</div></article>
+        <article class="experience-card" data-tilt><div class="experience-top"><span class="mono">04 / CONNECT</span><i data-lucide="sparkles" aria-hidden="true"></i></div><h3>Stories<br>over tea.</h3><p>Kazakh hospitality. Local voices. A place at the table.</p><button class="experience-toggle text-link" aria-expanded="false" aria-controls="culture-details" type="button">The cultural route <i data-lucide="plus" aria-hidden="true"></i></button><div class="experience-detail" id="culture-details" hidden>Visit the Botai-Burabay Museum and the Glade of Abylai Khan. Ask a local guide about the stories behind the stone, then make time for tea.</div></article>
+      </div>
+      <div class="journey-note reveal"><span class="mono">THE JOURNEY BEGINS IN ASTANA</span><p>By road into the pines, or by rail to Shchuchinsk and onward to the lake.</p><a class="text-link" href="https://www.google.com/maps/dir/Astana/Burabay,+Kazakhstan/" target="_blank" rel="noopener noreferrer">Trace the route <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    </section>
+
+    <section class="outro section-dark" id="experience" aria-labelledby="outro-title">
+      <img class="outro-background" src="https://images.unsplash.com/photo-1666976621086-cd1b48cfb305?auto=format&amp;fit=crop&amp;q=85&amp;w=2400" alt="" loading="lazy" width="2400" height="1600">
+      <div class="outro-shade"></div><div class="outro-content"><p class="mono reveal">04 / THE REST IS YOUR STORY</p><h2 id="outro-title">Come for the view.<br><em>Stay for the feeling.</em></h2><button class="expedition-button" type="button" data-plan data-magnetic data-cursor="Let's go"><span>Plan Expedition</span><span class="expedition-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span><span class="liquid-fill" aria-hidden="true"></span></button><p class="outro-note">Your next chapter, a little further from the familiar.</p></div>
+      <div class="outro-coordinate mono">53.0850° N &nbsp; / &nbsp; 70.3025° E <span>BURABAY, KAZAKHSTAN</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-dark"><div class="footer-top"><a class="footer-brand" href="#top">BURABAY<span class="mono">A DIFFERENT KIND OF WILD.</span></a><div class="local-time"><span class="mono">LOCAL TIME · GMT+5</span><time id="local-time">--:--:--</time></div><div class="footer-controls"><button class="sound-toggle" type="button" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="sound-label">SOUND OFF</span></button><a class="back-top" href="#top" data-magnetic aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a></div></div><div class="footer-bottom mono"><span>© <span id="year">2026</span> BURABAY EXPLORATIONS</span><a href="https://kazakhstan.travel/en/attractions/6" target="_blank" rel="noopener noreferrer">OFFICIAL DESTINATION GUIDE <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><button type="button" class="credits-toggle">PHOTOGRAPHY & CREDITS</button></div></footer>
+
+  <dialog class="editorial-dialog story-dialog" id="story-dialog" aria-labelledby="story-title" data-lenis-prevent><div class="dialog-top"><span class="mono">FROM THE BURABAY FIELD JOURNAL</span><button class="dialog-close icon-button" type="button" aria-label="Close story"><i data-lucide="x" aria-hidden="true"></i></button></div><p class="mono story-kicker"></p><h2 id="story-title"></h2><p class="story-body"></p><p class="story-note"></p><div class="story-actions"><a class="text-link story-map" target="_blank" rel="noopener noreferrer">Find on the map <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a class="text-link story-source" target="_blank" rel="noopener noreferrer">Read the source <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></dialog>
+
+  <dialog class="editorial-dialog planner-dialog" id="planner-dialog" aria-labelledby="planner-title" data-lenis-prevent>
+    <div class="dialog-top"><span class="mono">YOUR BURABAY FIELD BRIEF</span><button class="dialog-close icon-button" type="button" aria-label="Close expedition planner"><i data-lucide="x" aria-hidden="true"></i></button></div>
+    <h2 id="planner-title">Make room<br>for <em>the wild.</em></h2><p class="planner-intro">Choose your season and pace. Start with a little inspiration, then make it your own.</p>
+    <form id="planner-form"><div class="planner-inputs"><label>Season<select name="season"><option value="spring">Spring · Apr–May</option><option value="summer" selected>Summer · Jun–Aug</option><option value="autumn">Autumn · Sep–Oct</option><option value="winter">Winter · Nov–Mar</option></select></label><label>Your pace<select name="pace"><option value="slow">Slow & restorative</option><option value="explore">Trails & discovery</option><option value="culture">Culture & connection</option></select></label><label>Time to wander<select name="days"><option value="2">2 days</option><option value="3" selected>3 days</option><option value="4">4 days</option></select></label></div><button class="planner-submit" type="submit">Shape my expedition <i data-lucide="arrow-right" aria-hidden="true"></i></button></form>
+    <div class="itinerary" id="itinerary" hidden aria-live="polite"><div class="itinerary-heading"><h3>Your suggested journey</h3><span class="mono itinerary-meta"></span></div><ol class="itinerary-days"></ol><p class="itinerary-season"></p><div class="itinerary-actions"><button type="button" class="download-brief text-link">Save travel brief <i data-lucide="download" aria-hidden="true"></i></button><a class="text-link" href="https://www.google.com/maps/dir/Astana/Burabay,+Kazakhstan/" target="_blank" rel="noopener noreferrer">Open route <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div>
+  </dialog>
+
+  <dialog class="editorial-dialog credits-dialog" id="credits-dialog" aria-labelledby="credits-title" data-lenis-prevent><div class="dialog-top"><span class="mono">BEHIND THE LANDSCAPE</span><button class="dialog-close icon-button" type="button" aria-label="Close credits"><i data-lucide="x" aria-hidden="true"></i></button></div><h2 id="credits-title">Through<br>their <em>eyes.</em></h2><p>Photographs made in Burabay, Kazakhstan, shared under the Unsplash License. The landscape studies accompanying the legends show the region; they are not labelled as portraits of individual formations.</p><ul class="credits-list"><li><a href="https://unsplash.com/photos/MZWV9fEnAGk" target="_blank" rel="noopener noreferrer">Darya Popova <span>Lake & mountain study ↗</span></a></li><li><a href="https://unsplash.com/@taur" target="_blank" rel="noopener noreferrer">Alena Taur <span>Granite & forest studies ↗</span></a></li><li><a href="https://unsplash.com/@igorladigin" target="_blank" rel="noopener noreferrer">Igor Ladigin <span>Lakeshore study ↗</span></a></li><li><a href="https://unsplash.com/photos/c63zz1-4Y0g" target="_blank" rel="noopener noreferrer">Viktor Hesse <span>Forest road study ↗</span></a></li></ul><p class="credits-footnote">Destination facts: <a href="https://kazakhstan.travel/en/attractions/6" target="_blank" rel="noopener noreferrer">Kazakh Tourism</a>. Legends: <a href="https://qazaqculture.com/en/cultural-objects/54b7db67-434e-4f87-a6ee-814308b3e18d" target="_blank" rel="noopener noreferrer">Qazaq Culture</a>. Ambient sound is a synthesized wind and water soundscape.</p></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript-note">Explore at your own pace. Expedition planning and motion are available with JavaScript enabled.</div></noscript>
+</body>
+</html>
+
+
